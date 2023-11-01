@@ -7,6 +7,7 @@
   "engines": {
     "vscode": "^1.83.0"
   },
+  "publisher": "songbing",
   "categories": [
     "Other"
   ],
@@ -47,5 +48,9 @@
     "axios": "^1.6.0",
     "vsce": "^2.15.0"
   },
-  "repository": ""
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/songbing97/tiny-compress"
+  },
+  "homepage": "https://github.com/songbing97/tiny-compress/README.md"
 }
