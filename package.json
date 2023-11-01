@@ -3,6 +3,7 @@
   "displayName": "tiny-compress",
   "description": "熊猫压缩插件",
   "version": "0.0.1",
+  "type": "commonjs",
   "engines": {
     "vscode": "^1.83.0"
   },
@@ -28,14 +29,14 @@
     }
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "pnpm run lint",
-    "test": "node ./test/runTest.js"
+    "build": "vsce package",
+    "publish": "vsce package && vsce publish",
+    "update": "vsce publish patch"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.3",
-    "@types/node": "18.x",
-    "@types/vscode": "^1.83.0",
+    "@types/node": "~18.18.8",
+    "@types/vscode": "^1.83.1",
     "@vscode/test-electron": "^2.3.6",
     "eslint": "^8.52.0",
     "glob": "^10.3.10",
@@ -43,6 +44,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "axios": "^1.6.0"
-  }
+    "axios": "^1.6.0",
+    "vsce": "^2.15.0"
+  },
+  "repository": ""
 }
