@@ -2,7 +2,7 @@
   "name": "tiny-compress",
   "displayName": "tiny-compress",
   "description": "熊猫压缩插件",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "commonjs",
   "engines": {
     "vscode": "^1.83.0"
