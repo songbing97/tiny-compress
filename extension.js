@@ -38,11 +38,12 @@ async function startMinify(path) {
 }
 
 async function minifyFile(path) {
+  console.log(vscode.workspace.getConfiguration('tiny-compress').get('api_key'))
   try {
     const res = await axios.post('https://api.tinify.com/shrink', fs.createReadStream(path), {
       auth: {
         username: 'api',
-        password: 'g4nmvpYKFptdZGhSZNsg7f593Pn77KP1'
+        password: vscode.workspace.getConfiguration('tiny-compress').get('api_key')
       },
       headers: {
         'Content-Type': 'application/octet-stream',

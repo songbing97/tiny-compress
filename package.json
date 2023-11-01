@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "vsce package",
-    "publish": "vsce package && vsce publish",
+    "publish": "vsce publish",
     "update": "vsce publish patch"
   },
   "devDependencies": {
