@@ -4,6 +4,7 @@
   "description": "熊猫压缩插件",
   "version": "0.0.3",
   "type": "commonjs",
+  "icon": "img/panda.png",
   "engines": {
     "vscode": "^1.83.0"
   },
